@@ -1,0 +1,24 @@
+Problem statement
+Create a Java program that demonstrates type casting from an integer (int) to a double (double).
+
+Instructions:
+We have already declared an integer variable named "myInt" and initialized it with the value 9.
+
+Sample Input :
+9 
+Sample Output :
+9
+9.0
+
+----------------------------------------------------------------------------------------------------------
+
+public class Solution {
+  public static void main(String[] args) {
+    int my_Int = 9;
+    // write your code logic here !!
+
+    System.out.println(my_Int);
+    System.out.println((double) my_Int);
+
+  }
+}

@@ -1,0 +1,33 @@
+Problem statement
+You are given two integers, a and b. Your task is to implement a program that performs the following operations using bitwise operators:
+
+1. Calculate the bitwise left shift (<<) of a by 1 position to the left.  
+2. Calculate the bitwise right shift (>>) of b by 1 position to the right.
+3.Print the results of each operation.
+
+Sample input :
+12
+7
+Sample output:
+24
+3
+
+-------------------------------------------------------------------------------------------------
+
+public class Solution {
+    public static void main(String[] args) {
+        int a = 12; // value for 'a'
+        int b = 7;  // value for 'b'
+        int c = 1;
+
+
+        // Bitwise left shift for 'a'
+        int res1 = a << c;
+        System.out.println(res1);
+       
+
+        // Bitwise right shift for 'b'
+         int res2 = b >> c; 
+         System.out.println(res2);
+    }
+}
