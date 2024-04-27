@@ -1,0 +1,53 @@
+Problem statement
+Print the following pattern for the given number of rows.
+
+Pattern for N = 5
+
+           1
+          232
+         34543
+        4567654
+       567898765
+
+
+Constraints :
+0 <= N <= 50
+
+
+
+Sample Input 1:
+4
+Sample Output 1:
+           1
+          232
+         34543
+        4567654
+
+------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Solution {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+
+		for(int i=1; i<=n ; i++){
+
+			for(int spaces =1; spaces <= n-i; spaces++){
+				System.out.print(' ');
+			}
+
+			for(int incN = i; incN<= 2*i -1; incN++){
+				System.out.print(incN);
+			}
+
+			for(int decN = 2*i-2; decN>= i; decN--){
+				System.out.print(decN);
+			}
+
+			System.out.println();
+		}
+	}
+}
+

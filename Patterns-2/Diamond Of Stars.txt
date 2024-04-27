@@ -1,0 +1,67 @@
+Problem statement
+Print the following pattern for the given number of rows.
+
+Note: N is always odd.
+
+
+Pattern for N = 5
+  *
+ ***
+*****
+ ***
+  *
+
+Constraints :
+1 <= N <= 49
+
+
+Sample Input 1:
+5
+Sample Output 1:
+  *
+ ***
+*****
+ ***
+  *
+Sample Input 2:
+3
+Sample Output 2:
+  *
+ ***
+  *
+
+-------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in); 
+        int n = s.nextInt(); 
+        int mid = n/2 +1;
+
+        for(int i=1; i<=mid ; i++){
+            for(int sp=1; sp<= mid-i ; sp++){
+                System.out.print(' ');
+            }
+            for(int st=1; st<= 2*i-1; st++){
+                System.out.print('*');
+            }
+
+            System.out.println();
+
+        }
+
+         for(int i=mid-1; i>=1 ; i--){
+            for(int sp=mid-i; sp>= 1 ; sp--){
+                System.out.print(' ');
+            }
+            for(int st=1; st<= 2*i-1; st++){
+                System.out.print('*');
+            }
+
+            System.out.println();
+
+        }
+        
+    }
+}
