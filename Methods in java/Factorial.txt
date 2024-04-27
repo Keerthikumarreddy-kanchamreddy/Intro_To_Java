@@ -1,0 +1,26 @@
+Problem statement
+Given an integer n, find and Return the factorial of the given integer.
+
+Sample Input 1:
+6
+Sample Output 1:
+720
+Sample Input 2:
+4
+Sample Output 2:
+24
+
+--------------------------------------------------------------------------------------------
+
+
+public class Solution {
+	
+	public static void fact(int n) {
+		int fact = 1; 
+
+		for(int i=1; i<=n; i++){
+			fact = fact*i; 
+		}
+		System.out.println(fact);
+	}		
+}
